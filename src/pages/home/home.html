@@ -1,0 +1,54 @@
+<ion-header>
+	<ion-navbar>
+		<!--<button ion-button menuToggle icon-only end>-->
+			<!--<ion-icon name='menu'></ion-icon>-->
+		<!--</button>-->
+    <ion-buttons end>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+		<img src="assets/img/logo_horizontal.png" height="40" class="center" />
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 text-center>
+        <h1>
+          <img src="assets/img/kind_registration/{{company.kind_registration}}.png" height="20" />
+          {{company.name}}
+        </h1>
+
+			</ion-col>
+		</ion-row>
+    <ion-row>
+      <ion-col>
+        <img src="assets/img/isologo.jpg" height="100" class="center" />
+      </ion-col>
+    </ion-row>
+		<ion-row>
+      <ion-col col-6-auto>
+        <button ion-button block (click)="scan()" >
+          {{'validar_productos' | translate}}
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="offers">
+      <ion-col col-12 text-center>
+        <h2>Ofertas entregadas el dia de hoy</h2>
+        <ion-list>
+          <ion-item>
+            <b>{{'Oferta'|translate}}</b>
+            <b item-end>{{'Hora'|translate}}</b>
+          </ion-item>
+          <ion-item *ngFor="let offer of offers">
+            <p>{{offer.name}}</p>
+            <p item-end>{{offer.createdAt |date: 'HH:mm'}}</p>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
