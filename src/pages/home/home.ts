@@ -3,7 +3,9 @@ import { NavController} from 'ionic-angular';
 import { VePorEl, Util, Database } from '../../providers/providers';
 //import { ZBar, ZBarOptions } from '@ionic-native/zbar';
 import { OfferPage } from "../offer/offer";
-import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner/ngx';
+import {BarcodeScanner, BarcodeScannerOptions} from "@ionic-native/barcode-scanner";
+// import {BarcodeScanner} from "@ionic-native/barcode-scanner/ngx";
+// import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 
 /**
  * Generated class for the HomePage page.

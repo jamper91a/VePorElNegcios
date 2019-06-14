@@ -82,5 +82,10 @@ npm install @ionic-native/in-app-browser
 
 npm install angular2-swiper-wrapper --save-dev
 
-ionic cordova plugin add cordova-sqlite-storage
+ionic cordova plugin add cordova-sqlite-storage@3.2.0
 npm install @ionic-native/sqlite
+
+cordova plugin add cordova-plugin-ionic --save --variable APP_ID="83ede99a" --variable CHANNEL_NAME="Master" --variable UPDATE_METHOD="auto"
+
+ionic cordova plugin add phonegap-plugin-barcodescanner@3.2.0
+npm install @ionic-native/barcode-scanner@3.2.0

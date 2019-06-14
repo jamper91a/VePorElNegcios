@@ -28,7 +28,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicImageLoader } from 'ionic-image-loader';
 import { MomentModule } from 'angular2-moment';
 import { Ionic2RatingModule } from 'ionic2-rating';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import {BarcodeScanner} from "@ionic-native/barcode-scanner";
+import {SQLite} from '@ionic-native/sqlite';
 // import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 //import { ZBar } from '@ionic-native/zbar';
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
@@ -79,7 +80,7 @@ export function providers() {
     VePorEl,
     Database,
     //ZBar,
-    // SQLite,
+    SQLite,
     BarcodeScanner,
     IonicErrorHandler
     // Keep this to enable Ionic's runtime error handling during development

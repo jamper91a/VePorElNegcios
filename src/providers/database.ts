@@ -5,7 +5,7 @@ import { Util } from './util';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 import { Platform } from 'ionic-angular';
-import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 import { Observable } from "rxjs/Observable";
 @Injectable()
 export class Database {

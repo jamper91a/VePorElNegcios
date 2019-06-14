@@ -47,8 +47,8 @@ export class Util{
       country_code: 'country_code',
       find_promotion_by_user_id: 'find_promotion_by_user_id'
     };
-    //this.url = "https://backend.veporel.com.co:85/";
-    this.url = "http://192.168.1.65:1337/";
+    this.url = "https://backend.veporel.com.co:85/";
+    // this.url = "http://192.168.1.65:1337/";
     this.tables = {
       offers_user: "offers_user",
     };
